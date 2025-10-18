@@ -4,6 +4,7 @@
  */
 package com.mycompany.otoparkyonetimotomasyonu;
 
+import java.time.LocalDateTime;
 import java.util.*;
 
 /**
@@ -20,10 +21,19 @@ public class Otopark {
     }
     public void aracCikisYap(Arac cikis_arac){
         parkEtmisAraclar.remove(cikis_arac);
+        System.out.println("Odemeniz gereken ucret: " + cikis_arac.ucretHesapla(LocalDateTime.now()));
+        
     }
     public void araclariListele(){
-        for (Arac arac : parkEtmisAraclar) {
-            arac.bilgiGoster();
+        if(parkEtmisAraclar.isEmpty())
+        {
+            System.out.println("Otopark Bos.");
         }
+        else{
+            for (Arac arac : parkEtmisAraclar) {
+                arac.bilgiGoster();
+            }
+        }
+        
     }
 }

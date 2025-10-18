@@ -18,12 +18,25 @@ public class Motosiklet extends Arac{
 
     @Override
     public double ucretHesapla(LocalDateTime cikisZamani) {
-        
+        int girisSaati = this.getGirisZamani().getHour();//17
+        int girisDakika = this.getGirisZamani().getMinute();//05
+        int cikisSaati = cikisZamani.getHour();//20
+        int cikisDakika = cikisZamani.getMinute();//15
+        int kalinanSaat = 0;
+        if(girisDakika > cikisDakika){
+            kalinanSaat = cikisSaati - girisSaati - 1;
+        }
+        else{
+            kalinanSaat = cikisSaati - girisSaati;
+        }
+        double toplamFatura = (Tarife.MOTOSIKLET_KATSAYISI*kalinanSaat*Tarife.SAATLIK_UCRET)+Tarife.GIRIS_UCRETI;
+        return toplamFatura;
+    
     }
     
     @Override
     public void bilgiGoster(){
-        System.out.println("Arac plakası: " + this.getPlaka() + " giris saati: " + this.getGirisZamani().getHour() + ":" + this.getGirisZamani().getMinute());
+        System.out.println("Motor plakasi: " + this.getPlaka() + " giris saati: " + this.getGirisZamani().getHour() + ":" + this.getGirisZamani().getMinute());
     }
     
     
