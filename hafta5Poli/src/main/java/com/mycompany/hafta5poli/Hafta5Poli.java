@@ -3,7 +3,7 @@
  */
 
 package com.mycompany.hafta5poli;
-
+/*
 class Hayvan {
     Hayvan() {
         System.out.println("Hayvan yapılandırıcısı");
@@ -35,8 +35,33 @@ class Timsah extends Hayvan {
         System.out.println("Timsah avYakala");
     }
 }
+*/
+
+abstract class A
+{
+    abstract void myMethod(Number N);
+}
+ 
+interface B
+{
+    abstract void myMethod(Object O);
+}
+ 
+class C extends A implements B
+{
+    void myMethod(Number N)
+    {
+        System.out.println("Number");
+    }
+ 
+    public void myMethod(Object O)
+    {
+        System.out.println("Object");
+    }
+}
 
 public class Hafta5Poli {
+    /*
     public static Hayvan rasgeleSec() {
         int sec = (int) (Math.random() * 3);
         Hayvan h = null;
@@ -49,8 +74,9 @@ public class Hafta5Poli {
         }
         return h;
     }
-
+*/
     public static void main(String[] args) {
+        /*
         Hayvan[] h = new Hayvan[3];
 
         // diziyi doldur
@@ -64,5 +90,20 @@ public class Hafta5Poli {
         for (int j = 0; j < 3; j++) {
             h[j].avYakala(); // Dikkat!
         }
+*/
+         A a = new C();
+ 
+        //a.
+ 
+        B b = new C();
+ 
+        //b.
+ 
+        C c = new C();
+        Object obj = new Integer(123);
+        int sayi = 123;
+        c.myMethod(new Integer(123));
+
+        
     }
 }

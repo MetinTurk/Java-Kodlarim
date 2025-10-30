@@ -24,9 +24,9 @@ public class KutuphaneYonetimSistemiClassYapisi {
         
         int toplamMaliyet = 0;
         for(int i = 0; i < yayinlar.length; i++){
-            IKullanilabilir IK1 = (IKullanilabilir) yayinlar[i];
-            if(IK1.kullanimaUygunMu()){
-                toplamMaliyet += IK1.kullanimMaliyetiHesapla();
+            //IKullanilabilir IK1 = (IKullanilabilir) yayinlar[i];
+            if(yayinlar[i].kullanimaUygunMu()){
+                toplamMaliyet += yayinlar[i].kullanimMaliyetiHesapla();
             }
         }
         System.out.println("Toplam maliyet: " + toplamMaliyet);
