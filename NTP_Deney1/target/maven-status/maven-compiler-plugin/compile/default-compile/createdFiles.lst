@@ -1,0 +1,10 @@
+model\LisansOgrenci.class
+model\Ogrenci.class
+model\YuksekLisansOgrenci.class
+com\mycompany\ntp_deney1\model\YuksekLisansOgrenci.class
+util\DbConnection.class
+com\mycompany\ntp_deney1\NTP_Deney1.class
+dao\OgrenciDAO.class
+app\main.class
+com\mycompany\ntp_deney1\model\Ogrenci.class
+com\mycompany\ntp_deney1\model\LisansOgrenci.class
