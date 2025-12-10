@@ -28,6 +28,6 @@ public class Hangar<T extends HavaAraci> {
             System.out.println(arac.getClass().getName());
             count++;
         }
-        System.out.println("Toplam taşıt sayısı: " + count);
+        System.out.println("Toplam tasit sayisi: " + count);
     }
 }
