@@ -62,8 +62,8 @@ public class main {
         System.out.println("4. Bölüm");
 
         System.out.println("\n>> ID 50 siliniyor...");
-        dao.deleteById(50);
-        listele(dao);
+        //dao.deleteById(50);
+        //listele(dao);
     }
 
     
