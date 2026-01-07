@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.e_ticaret_ve_sepet_yonetim_sistemi.OOP;
+
+public class Giyim extends Urun {
+    private String beden;
+
+    public Giyim(int id, String ad, double fiyat, int stok, String beden) {
+        super(id, ad, fiyat, stok);
+        this.beden = beden;
+    }
+
+    @Override
+    public double kdvHesapla() {
+        return getFiyat() * 0.10; // Giyimde %10 KDV
+    }
+
+    @Override
+    public String getKategoriAdi() {
+        return "Giyim";
+    }
+
+    @Override
+    public String urunBilgisiGetir() {
+        return "ID: " + getId() + " | " + getAd() + " (Beden: " + beden + ") - " + getFiyat() + " TL";
+    }
+}
