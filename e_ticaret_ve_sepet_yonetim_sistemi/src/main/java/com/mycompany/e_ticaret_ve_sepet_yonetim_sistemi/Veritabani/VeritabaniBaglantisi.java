@@ -15,7 +15,7 @@ import java.sql.SQLException;
 public class VeritabaniBaglantisi {
     private static final String URL = "jdbc:mysql://localhost:3306/eticaret_db";
     private static final String USER = "root"; 
-    private static final String PASSWORD = ""; 
+    private static final String PASSWORD = "Metinsila23."; 
 
     public static Connection baglan() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);

@@ -26,7 +26,7 @@ public class Sepet {
         sepetUrunleri.clear();
     }
 
-    // Swing ekranında göstermek için sepetin özetini String olarak döndürür
+    
     public String sepetOzeti() {
         if (sepetUrunleri.isEmpty()) return "Sepetiniz boş.";
         

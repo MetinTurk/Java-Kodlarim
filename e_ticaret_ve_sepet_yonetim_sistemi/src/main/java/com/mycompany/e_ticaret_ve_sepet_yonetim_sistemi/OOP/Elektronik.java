@@ -14,7 +14,7 @@ public class Elektronik extends Urun {
 
     @Override
     public double kdvHesapla() {
-        return getFiyat() * 0.20; // Elektronikte %20 KDV
+        return getFiyat() * 0.20; 
     }
 
     @Override

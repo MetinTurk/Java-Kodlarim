@@ -14,7 +14,7 @@ public class Giyim extends Urun {
 
     @Override
     public double kdvHesapla() {
-        return getFiyat() * 0.10; // Giyimde %10 KDV
+        return getFiyat() * 0.10; 
     }
 
     @Override
